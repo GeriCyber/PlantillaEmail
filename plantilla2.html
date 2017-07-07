@@ -1,0 +1,408 @@
+<!--
+    This is a template for responsive HTML email using Cerberus Framework
+    Author: Geraldine Herrera Garmendia
+    Twitter, Instagram: gericyber
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+	<title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <style>
+
+        body {
+	        margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        div[style*="margin: 16px 0"] {
+            margin:0 !important;
+        }
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+        table table table {
+            table-layout: auto;
+        }
+
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        *[x-apple-data-detectors],	/* iOS */
+        .x-gmail-data-detectors, 	/* Gmail */
+        .x-gmail-data-detectors *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        
+        .a6S {
+	        display: none !important;
+	        opacity: 0.01 !important;
+        }
+        img.g-img + div {
+	        display:none !important;
+	   	}
+
+        .button-link {
+            text-decoration: none !important;
+        
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) { /* iPhone 6 and 6+ */
+            .email-container {
+                min-width: 375px !important;
+            }
+        }
+
+    </style>
+    
+    <style>
+
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+
+            .fluid {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+			.email-container p {
+				font-size: 17px !important;
+				line-height: 22px !important;
+			}
+			
+        }
+
+    </style>
+    
+</head>
+<body width="100%" bgcolor="#222222" style="margin: 0; mso-line-height-rule: exactly;">
+    <center style="width: 100%; background: #fff; text-align: left;">
+
+        <!-- Preheader Text : BEGIN -->
+        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
+            (Optional) This text will appear in the inbox preview, but not the email body.
+        </div>
+        <!-- Preheader Text : END -->
+
+        <!-- Email Body : BEGIN -->
+        <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="margin: auto;" class="email-container">
+
+            <!-- Header Image, Flush : BEGIN -->
+            <tr>
+				<td bgcolor="#ffffff">
+                        <img src="https://s14.postimg.org/41ofyqsy9/header.png" aria-hidden="true" width="600" height="" alt="alt_text" border="0" align="center" style="width: 100%; max-width: 600px; height: auto; background: #222222; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="g-img">
+				</td>
+            </tr>
+            <!-- Header Image, Flush : END -->
+
+            <!-- 1 Column Text + Button : BEGIN -->
+            <tr>
+                <td bgcolor="#EBEBEB" style="padding: 40px 40px 20px; text-align: center;">
+                    <h1 style="margin: 0; font-family: sans-serif; font-size: 24px; line-height: 27px; color: #333333; font-weight: normal;">Praesent laoreet malesuada&nbsp;cursus.</h1>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#EBEBEB" style="padding: 0 40px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: center;">
+                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#EBEBEB" style="padding: 0 40px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                    <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto">
+                        <tr>
+                            <td style="border-radius: 40px; background: #222222; text-align: center;" class="button-td">
+                                <a href="#" style="background: #222222; border: 12px solid #222222; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 40px; font-weight: bold;" class="button-a">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#EBEBEB;">Leer Mas</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Button : END -->
+                </td>
+            </tr>
+            <!-- 1 Column Text + Button : END -->
+
+            <!-- 2 Even Columns : BEGIN -->
+            <tr>
+                <td bgcolor="#EBEBEB" align="center" valign="top" style="padding: 10px;">
+                    <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <!-- Column : BEGIN -->
+                            <td class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="padding: 10px; text-align: center">
+                                            <img src="https://s7.postimg.org/fiqjv9lxn/image.png" aria-hidden="true" width="270" height="270" alt="alt_text" border="0" class="fluid" style="height: auto; background: #EBEBEB; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family: sans-serif; font-size: 13px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: center;" class="center-on-narrow">
+                                            <p style="margin: 0; font-size: 15px;"><b>Lorem Ipsum</b></p>
+                                            <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <td class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="padding: 10px; text-align: center">
+                                            <img src="https://s7.postimg.org/fiqjv9lxn/image.png" aria-hidden="true" width="270" height="270" alt="alt_text" border="0" class="fluid" style="height: auto; background: #EBEBEB; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family: sans-serif; font-size: 13px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: center;" class="center-on-narrow">
+                                            <p style="margin: 0; font-size: 15px;"><b>Lorem Ipsum</b></p>
+                                            <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 2 Even Columns : END -->
+
+            <!-- 3 Even Columns : BEGIN -->
+            <tr>
+                <td bgcolor="#EBEBEB" align="center" valign="top" style="padding: 30px;">
+                    <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <!-- Column : BEGIN -->
+                            <td width="33.33%" class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="padding: 10px; text-align: center">
+                                            <img src="https://s14.postimg.org/c80oakv69/image.png" aria-hidden="true" width="110" height="110" alt="alt_text" border="0" class="fluid" style="height: auto; background: #EBEBEB; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family: sans-serif; font-size: 13px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: center;" class="center-on-narrow">
+                                            <p style="margin: 0; font-size: 15px;"><b>Lorem Ipsum</b></p>
+                                            <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <td width="33.33%" class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="padding: 10px; text-align: center">
+                                            <img src="https://s14.postimg.org/c80oakv69/image.png" aria-hidden="true" width="110" height="110" alt="alt_text" border="0" class="fluid" style="height: auto; background: #EBEBEB; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family: sans-serif; font-size: 13px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: center;" class="center-on-narrow">
+                                            <p style="margin: 0; font-size: 15px;"><b>Lorem Ipsum</b></p>
+                                            <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <td width="33.33%" class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="padding: 10px; text-align: center">
+                                            <img src="https://s14.postimg.org/c80oakv69/image.png" aria-hidden="true" width="110" height="110" alt="alt_text" border="0" class="fluid" style="height: auto; background: #EBEBEB; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family: sans-serif; font-size: 13px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: center;" class="center-on-narrow">
+                                            <p style="margin: 0; font-size: 15px;"><b>Lorem Ipsum</b></p>
+                                            <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 3 Even Columns : END -->
+
+            <!-- Thumbnail Left, Text Right : BEGIN -->
+            <tr">
+                <td bgcolor="#EBEBEB" dir="ltr" align="center" valign="top" width="100%" style="padding: 10px;">
+                    <table role="presentation" aria-hidden="true" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <!-- Column : BEGIN -->
+                            <td width="33.33%" class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" valign="top" style="padding: 0 10px;">
+                                            <img src="https://s24.postimg.org/ssos136c5/image.png" aria-hidden="true" width="170" height="170" alt="alt_text" border="0" class="center-on-narrow" style="height: auto; background: #EBEBEB; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <td width="66.66%" class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px; text-align: center;" class="center-on-narrow">
+                                                    <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 16px; line-height: 21px; color: #333333; font-weight: bold;">Class aptent taciti sociosqu</h2>
+                                                    <p style="margin: 0 0 10px 0; font-size: 14px; text-align: left">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                            <!-- Button : BEGIN -->
+                                            <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:center;">
+                                                <tr>
+                                                    <td style="border-radius: 40px; background: #222222; text-align: center;" class="button-td">
+                                                        <a href="http://www.google.com" style="background: #222222; border: 12px solid #222222; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 40px; font-weight: bold;" class="button-a">
+						                                    <span style="color:#ffffff;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;Leer Mas&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						                                </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Button : END -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Thumbnail Left, Text Right : END -->
+
+            <!-- Thumbnail Right, Text Left : BEGIN -->
+            <tr>
+                <td bgcolor="#EBEBEB" dir="rtl" align="center" valign="top" width="100%" style="padding: 10px;">
+                    <table role="presentation" aria-hidden="true" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <!-- Column : BEGIN -->
+                            <td width="33.33%" class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" valign="top" style="padding: 0 10px;">
+                                            <img src="https://s8.postimg.org/skbmwp2v9/image.png" aria-hidden="true" width="170" height="170" alt="alt_text" border="0" class="center-on-narrow" style="height: auto; background: #EBEBEB; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <td width="66.66%" class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px; text-align: center;" class="center-on-narrow">
+                                                    <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 16px; line-height: 21px; color: #333333; font-weight: bold;">Class aptent taciti sociosqu</h2>
+                                                    <p style="margin: 0 0 10px 0; font-size: 14px; text-align: left">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                            <!-- Button : BEGIN -->
+                                            <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:center;">
+                                                <tr>
+                                                    <td style="border-radius: 40px; background: #222222; text-align: center;" class="button-td">
+                                                        <a href="http://www.google.com" style="background: #222222; border: 12px solid #222222; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 40px; font-weight: bold;" class="button-a">
+						                                    <span style="color:#ffffff;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;Leer Mas&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						                                </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Button : END -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Thumbnail Right, Text Left : END -->
+
+        </table>
+        <!-- Email Body : END -->
+
+        <!-- Email Footer : BEGIN -->
+        <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="margin: auto;" class="email-container">
+            <tr>
+                <td bgcolor="#222222" style="padding: 40px 40px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #EBEBEB; text-align: center;">
+                    <a style="color:#EBEBEB; text-decoration:none; cursor: pointer;" href="#">Visitar Pagina Web</a>
+                    <br><br>
+                    Company Name<br>123 Fake Street, SpringField, OR, 97477 US
+                    <br><br>(123) 456-7890
+                    <br><br>
+                </td>
+            </tr>
+        </table>
+        <!-- Email Footer : END -->
+
+    </center>
+</body>
+</html>
